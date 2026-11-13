@@ -1,0 +1,54 @@
+/* 500-question exam practice, bilingual responsive layout */
+.faro-bank-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(115deg,#212344 0%,#4c3f8e 100%);color:#fff;border-radius:19px;padding:27px 30px;margin-bottom:16px}
+.faro-bank-eyebrow{font-size:11px;letter-spacing:.12em;font-weight:800;color:#c9bcff}
+.faro-bank-intro h2{font-size:25px;margin:10px 0 8px;color:#fff}
+.faro-bank-intro p{font-size:14px;line-height:1.65;color:#e0dcf6;max-width:620px;margin:0}
+.faro-bank-count{text-align:center;flex-shrink:0;background:#ffffff15;border:1px solid #ffffff30;border-radius:15px;padding:15px 22px;min-width:126px}
+.faro-bank-count b{display:block;font-size:38px;line-height:1.2}
+.faro-bank-count span{display:block;font-size:11px;color:#eeeaff}
+.faro-question-numbers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:19px}
+.faro-question-numbers>div{border:1px solid var(--border);background:#fff;border-radius:13px;padding:16px 19px}
+.faro-question-numbers strong{display:block;font-size:25px;color:#26223f;line-height:1.3}
+.faro-question-numbers strong span{font-size:15px;color:var(--muted)}
+.faro-question-numbers small{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:3px}
+.faro-quiz-columns{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,0.8fr);gap:17px;align-items:start}
+.faro-quiz-columns>.panel{min-width:0}
+.faro-question-control h3,.faro-dom-breakdown h3{font-size:17px}
+.faro-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:13px}
+.faro-choice{background:#fff;border:1px solid #dddceb;border-radius:14px;text-align:left;cursor:pointer;padding:17px;display:flex;flex-direction:column;align-items:flex-start;gap:5px;transition:.15s ease;min-width:0;color:#25213a}
+.faro-choice:hover,.faro-choice:focus-visible{border-color:#8170dd;box-shadow:0 5px 18px #5d52a422;transform:translateY(-1px)}
+.faro-choice-icon{font-size:24px;margin-bottom:5px}
+.faro-choice b{font-size:14px}
+.faro-choice strong{font-size:20px;color:#5142ab}
+.faro-choice small{font-size:12px;line-height:1.45;color:#6b687f}
+.faro-choice-featured{background:#f7f4ff;border-color:#c4baf3}
+.faro-error-cta{margin-top:15px;width:100%;justify-content:center}
+.faro-disclaimer{font-size:11px;line-height:1.7;color:#676479;background:#f8f8fc;border:1px solid #e6e5ee;border-radius:10px;padding:13px;margin-top:16px}
+.faro-available{color:var(--muted);font-size:12px;margin-top:8px}
+.faro-domain-breakdown{display:block;width:100%;background:transparent;text-align:left;cursor:pointer;border:1px solid transparent;border-bottom-color:#eae8f0;padding:12px 4px;border-radius:7px}
+.faro-domain-breakdown:hover{background:#f7f5ff}
+.faro-domain-header{display:flex;justify-content:space-between;gap:9px;font-size:12px;color:#424052;line-height:1.4}
+.faro-domain-header b{color:#5c50b4}
+.faro-domain-header strong{font-size:13px;flex-shrink:0;color:#4b4383}
+.faro-domain-track{display:block;height:5px;background:#ecebf5;border-radius:5px;overflow:hidden;margin:8px 0 5px}
+.faro-domain-track>span{display:block;height:100%;border-radius:5px}
+.faro-domain-sub{color:#85819a;font-size:11px}
+.faro-recent{border-bottom:1px solid #efedf5;padding:10px 2px;display:flex;justify-content:space-between;align-items:center}
+.faro-recent b,.faro-recent small{display:block}
+.faro-recent b{font-size:16px}
+.faro-recent small{color:#777286;margin-top:2px;font-size:11px}
+.faro-score-indicator{font-size:18px;color:#b78c48}.faro-score-indicator.faro-good{color:#1d9775}
+@media(max-width:900px){.faro-quiz-columns{grid-template-columns:1fr}}
+@media(max-width:580px){.faro-bank-intro{padding:18px;align-items:flex-start}.faro-bank-count{padding:12px;min-width:75px}.faro-bank-count b{font-size:28px}.faro-bank-intro h2{font-size:21px}.faro-bank-intro p{font-size:12px}.faro-question-numbers{gap:7px}.faro-question-numbers>div{padding:11px}.faro-question-numbers strong{font-size:21px}.faro-question-numbers small{font-size:10px}.faro-choice{padding:12px}.faro-choice strong{font-size:17px}.faro-choice b{font-size:12px}.faro-choice small{font-size:11px}}
+.faro-result-page{display:grid;gap:17px;max-width:1060px;margin:0 auto}
+.faro-results-overview{text-align:center;padding:34px}
+.faro-results-overview h2{font-size:25px;margin:9px 0 4px}
+.faro-results-overview>p{color:#77718a;font-size:14px;line-height:1.7}
+.faro-results-overview .sec-results-actions{justify-content:center}
+.faro-result-score{font-size:56px;font-weight:850;color:#5b4bb7;line-height:1.4}
+.faro-result-domain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px;margin-top:14px}
+.faro-result-domain{border:1px solid #e5e4ec;padding:13px;border-radius:10px}
+.faro-result-domain span{display:block;font-size:12px;color:#676178}
+.faro-result-domain strong{display:block;font-size:23px;color:#302b46;margin:5px 0}
+.faro-result-review .sec-review{margin-top:9px}
+@media(max-width:580px){.faro-results-overview{padding:20px}.faro-results-overview h2{font-size:20px}.faro-result-score{font-size:45px}}
